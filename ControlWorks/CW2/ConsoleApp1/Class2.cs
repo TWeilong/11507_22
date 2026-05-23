@@ -15,10 +15,7 @@ namespace ConsoleApp1
         {
             for (int i = 0; i < 100; i++)
             {
-                queue.Enqueue(() =>
-                {
-                    return 1;
-                });
+                queue.Enqueue(() => {return 1;});
             }
             List<Task> tasks =new List<Task>();
 
@@ -41,8 +38,7 @@ namespace ConsoleApp1
                             }
                         }
                         int result = job();
-                        lock (sumLock)
-                        {total += result;} }}));
+                        lock (sumLock){total += result;}}}));
             }
             Task.WaitAll(tasks.ToArray());
             Console.WriteLine(total);
