@@ -1,5 +1,0 @@
-Get-Content: 
-Line |
-   2 |  Get-Content -LiteralPath "Mode                 LastWriteTime          …
-     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | Cannot find path 'Mode                 LastWriteTime         Length Name' because it does not exist.
