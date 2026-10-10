@@ -1,5 +1,0 @@
-Get-Content: 
-Line |
-   2 |  …  "-a---          28.09.2026    22:14            459 youtube.svg" -Raw
-     |                                                                     ~~~~
-     | A parameter cannot be found that matches parameter name 'Raw'.
