@@ -1,5 +1,0 @@
-Get-Content: 
-Line |
-   2 |  … h "-a---          28.09.2026    22:15            822 github.svg" -Raw
-     |                                                                     ~~~~
-     | A parameter cannot be found that matches parameter name 'Raw'.
