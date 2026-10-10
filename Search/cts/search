@@ -1,0 +1,5 @@
+Get-Content: 
+Line |
+   2 |  … alPath "Directory: C:\\Users\\Семёнов\\WebstormProjects\\search" -Raw
+     |                                                                     ~~~~
+     | A parameter cannot be found that matches parameter name 'Raw'.
