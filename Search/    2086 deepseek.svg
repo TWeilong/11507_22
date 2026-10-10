@@ -1,5 +1,0 @@
-Get-Content: 
-Line |
-   2 |  … "-a---          28.09.2026    22:15           2086 deepseek.svg" -Raw
-     |                                                                     ~~~~
-     | A parameter cannot be found that matches parameter name 'Raw'.
