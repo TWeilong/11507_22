@@ -1,5 +1,0 @@
-Get-Content: 
-Line |
-   2 |  … 8.09.2026    22:24           2573 geeksforgeeks-svgrepo-com.svg" -Raw
-     |                                                                     ~~~~
-     | A parameter cannot be found that matches parameter name 'Raw'.
