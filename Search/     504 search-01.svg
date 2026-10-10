@@ -1,0 +1,5 @@
+Get-Content: 
+Line |
+   2 |  … -a---          29.09.2026    10:22            504 search-01.svg" -Raw
+     |                                                                     ~~~~
+     | A parameter cannot be found that matches parameter name 'Raw'.
