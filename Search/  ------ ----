@@ -1,5 +1,0 @@
-Get-Content: 
-Line |
-   2 |  Get-Content -LiteralPath "----                 -------------          …
-     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | Cannot find path '----                 -------------         ------ ----' because it does not exist.
