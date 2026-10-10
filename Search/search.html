@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Engine</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Afacad:wght@400;700&family=Poppins:wght@400&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 1715.9420166015625px;
+            height: 397.68115234375px;
+            top:  359px;
+            left:  6px;
+            gap: 55.65px;
+        }
+
+        .greetinger {
+            display: flex;
+            position: absolute;
+            flex-direction: column;
+            align-items: center;
+            width: 1715.9420166015625px;
+            height: 397.68115234375px;
+            top:  359px;
+            left:  6px;
+            gap: 55.65px;
+        }
+
+        .time {
+            width: 281px;
+            height: 99px;
+            font-family: Afacad, sans-serif;
+            font-weight: 700;
+            font-size: 74px;
+            line-height: 100%;
+            text-align: center;
+            color: #212121;
+        }
+
+        .text {
+            width: 296px;
+            height: 48px;
+            font-family: Afacad, sans-serif;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 100%;
+            color: #6E6CDF;
+        }
+
+        .Search {
+            width: auto;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            box-sizing: border-box;
+            border-radius: 18.5px;
+            border: 1.16px #EEEEEE solid;
+            padding: 18.55px 27.83px;
+            gap: 9.28px;
+            background-color: #FAFAFA;
+        }
+
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 27.83px;
+            height: 65px;
+            width: 621.96px;
+        }
+
+        .search-block{
+            width: 621.45px;
+            height: 185.75px;
+            gap: 55.65px;
+            display: flex;
+            flex-direction: column;
+
+        }
+        .ttimetext{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 1715.94px;
+            height: 156.28px;
+            gap: 9.28px;
+        }
+        .links a {
+            width: 65px;
+            height: 65px;
+            border: 1.16px solid #EEEEEE;
+            border-radius: 18.57px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #FAFAFA;
+        }
+        .links a img{
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .weather {
+            position: absolute;
+            width: 1658px;
+            height: 70px;
+            top: 34px;
+            left: 35px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .Search span{
+            color: #9E9E9E;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 140%;
+            letter-spacing: 0.23px;
+        }
+        .temperature {
+            width: 44px;
+            height: 43px;
+            font-family: Afacad, sans-serif;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 100%;
+            text-align: center;
+            color: #212121;
+        }
+        .search-icon{
+            width: 28px;
+            height: 28px;
+        }
+        .city {
+            font-family: Afacad, sans-serif;
+            height: 27px;
+            width: 98px;
+            font-style: Bold;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 100%;
+            color: #6E6CDF;
+        }
+        @media (max-width: 600px) {
+            body {
+                width: 393px;
+                height: 852px;
+                color: #FFFFFF;
+            }
+
+            .greetinger {
+                display: flex;
+                position: absolute;
+                flex-direction: column;
+                align-items: center;
+                width: 1715.9420166015625px;
+                height: 397.68115234375px;
+                top:  359px;
+                left:  6px;
+                gap: 55.65px;
+            }
+
+            .time {
+                width: 182px;
+                height: 64px;
+                font-family: Afacad, sans-serif;
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 100%;
+                text-align: center;
+                color: #212121;
+            }
+
+            .text {
+                width: 198px;
+                height: 32px;
+                font-family: Afacad, sans-serif;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 100%;
+                color: #6E6CDF;
+            }
+
+            .Search {
+                width: auto;
+                height: auto;
+                display: flex;
+                flex-direction: row;
+                box-sizing: border-box;
+                border-radius: 16px;
+                border: 1px #EEEEEE solid;
+                padding: 16px 24px;
+                gap: 8px;
+                background-color: #FAFAFA;
+            }
+
+            .links {
+                display: flex;
+                justify-content: center;
+                gap: 27.83px;
+                height: 65px;
+                width: 621.96px;
+            }
+
+            .search-block{
+                width: 345px;
+                height: 129px;
+                gap: 24px;
+                top: 603px;
+                left:  24px;
+                display: flex;
+                flex-direction: column;
+
+            }
+            .ttimetext{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 345px;
+                height: 104px;
+                gap: 8px;
+                top: 283.5px;
+                left: 24px;
+            }
+            .links a {
+                width: 65px;
+                height: 65px;
+                border: 1.16px solid #EEEEEE;
+                border-radius: 18.57px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #FAFAFA;
+            }
+            .links a img{
+                width: 32px;
+                height: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+            }
+            .weather {
+                position: absolute;
+                width: 345px;
+                height: 48px;
+                top: 20px;
+                left: 24px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+            }
+
+            .Search span{
+                color: #9E9E9E;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 140%;
+                letter-spacing: 0.23px;
+            }
+            .temperature {
+                width: 31px;
+                height: 29px;
+                font-family: Afacad, sans-serif;
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 100%;
+                text-align: center;
+                color: #212121;
+            }
+            .search-icon{
+                width: 28px;
+                height: 28px;
+            }
+            .city {
+                font-family: Afacad, sans-serif;
+                height: 68px;
+                width: 19px;
+                font-style: Bold;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 100%;
+                color: #6E6CDF;
+            }
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="weather">
+    <div class="temperature">36°</div>
+    <div class="city">Ahmedabad</div>
+</div>
+
+<div class="greetinger">
+
+    <div class="ttimetext">
+        <div class="time">
+            09:11:01
+        </div>
+
+        <div class="text">
+            Good Morning, Saad.
+        </div>
+    </div>
+    <div class="search-block">
+        <div class="Search">
+            <a href="#"><img src="icon/search-01.svg" alt="Search"></a>
+            <span>Search</span>
+        </div>
+        <div class="links">
+            <a href="#"><img src="icon/youtube.svg" alt="YouTube"></a>
+            <a href="#"><img src="icon/chatgpt-icon.svg" alt="GPT"></a>
+            <a href="#"><img src="icon/geeksforgeeks-svgrepo-com.svg" alt="GeekForGeeks"></a>
+            <a href="#"><img src="icon/deepseek.svg" alt="DeepSeek"></a>
+            <a href="#"><img src="icon/github.svg" alt="GitHub"></a>
+            <a href="#"><img src="icon/linkedin-svgrepo-com.svg" alt="in"></a>
+            <a href="#">+</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
