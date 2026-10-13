@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="app_name">ClassWork</string>
+    <string name="cat_button">Кошка</string>
+    <string name="cat">Мурзик</string>
+    <string name="cat_info">Домашняя кошка, любит спать и играть.</string>
+    <string name="cat_age">6 лет</string>
+    <string name="dog_button">Собака</string>
+    <string name="dog">Жучка</string>
+    <string name="dog_info">Домашняя собака, любит гулять и играть.</string>
+    <string name="dog_age">8 лет</string>
+
+</resources>
