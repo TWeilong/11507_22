@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+
+    <script
+            src="https://api-maps.yandex.ru/2.1/?apikey=ce5c3746-ac09-4cb3-985a-0fb98a857833&lang=ru_RU"
+            type="text/javascript">
+    </script>
+
+</head>
+
+<script src="scripts/script-map.js"></script>
+<body>
+    <div class="div-main">
+        <header class="header-main">
+            <div class="header-main-div">
+                <div class="header-main-div-top">
+                    <div class="section__website" id="header-main-div-top-inside">
+
+                        <div id="header-main-div-top-inside-left" class = "header-top-text">
+                            <div id="header-city-name" class="header-top-text">
+                                <svg width="12" height="14">
+                                    <use href ="source/icon-svg/icon-location.svg#icon-location"></use>
+                                </svg>
+                                Казань
+                                <svg width="5" height="3">
+                                    <use href ="source/icon-svg/icon-downward-arrow.svg#icon-downward-arrow"></use>
+                                </svg>
+                            </div>
+                            <div id="header-street-name">
+                                Гаврилова, 23
+                            </div>
+                        </div>
+
+                        <div id="header-main-div-top-inside-right">
+                            <a id="header-stock" class="header-top-text header-top-text-hover">
+                                <svg width="24" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.574 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4.001 4.001 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" fill="#309"></path>
+                                    <path d="m15.724 9-6 6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M9.724 9h.01M15.724 15h.01" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                Акции
+                            </a>
+                            <div id="header-partners" class="header-top-text header-top-text-hover">
+                                Партнёрам
+                                <svg width="5" height="3">
+                                    <use href ="source/icon-svg/icon-downward-arrow.svg#icon-downward-arrow"></use>
+                                </svg>
+                            </div>
+                            <div id="header-buyer" class="header-top-text header-top-text-hover">
+                                Покупателю
+                                <svg width="5" height="3" class="header-top-text header-top-text-hover">
+                                    <use href ="source/icon-svg/icon-downward-arrow.svg#icon-downward-arrow"></use>
+                                </svg>
+                            </div>
+                            <div id="header-favourites" class="header-top-text header-top-text-hover">
+                                <svg width="18" height="20" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="m16.88 8.928-7.065 7.028h-.3L1.943 8.512l.01-.005a5.127 5.127 0 0 1-1.3-3.421A4.931 4.931 0 0 1 5.473.05 4.776 4.776 0 0 1 9.69 2.697 4.745 4.745 0 0 1 13.893.044a4.9 4.9 0 0 1 4.787 5 5.055 5.055 0 0 1-1.8 3.884Zm-1.276-1.6L9.78 13.252h-.245l-6.11-6.208.017-.02a2.989 2.989 0 1 1 4.621-3.78l.008-.007.037.058c.08.115.153.235.216.36l1.392 2.323 1.275-2.239c.066-.143.144-.28.232-.41A2.993 2.993 0 1 1 15.6 7.332l.004-.004Z" fill="#C4C4C4"></path>
+                                </svg>
+                                Избранное
+                            </div>
+                            <div id="header-profile" class="header-top-text header-top-text-hover">
+                                <svg width="13" height="15" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.368 4.447a3.947 3.947 0 1 1 7.895 0 3.947 3.947 0 0 1-7.895 0Zm3.948 2.369a2.368 2.368 0 1 0 0-4.737 2.368 2.368 0 0 0 0 4.737ZM1.85 11.034A6.316 6.316 0 0 0 0 15.5h1.579a4.737 4.737 0 0 1 9.474 0h1.579A6.317 6.317 0 0 0 1.85 11.034Z" fill="#000"></path>
+                                </svg>
+                                Войти
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="header-main-div-middle">
+
+                    <a id="header-main-div-middle-gif-zone" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW-J0ZQwy9hRubCKdcHvWxRwjzg4KNCngGPVaJC9OctYZ_ZgAmdafvZSY7&s=10">
+                        <img id="header-main-div-middle-gif" alt="logo" src="source/element-gif/late-2024.gif">
+                    </a>
+
+                    <form id="header-main-div-middle-search-form">
+                        <div class="header-main-div-middle-search-wrapper">
+                            <input id="header-main-div-middle-input-search" placeholder="Поиск, пример, шины 205 55 16">
+                        </div>
+                    </form>
+
+                    <div class="header-main-div-middle-right">
+
+                        <div class="header-main-div-middle-number-div">
+                        <span id="header-main-div-middle-number">
+                        8 (843) 204-02-57
+                        </span>
+                            <svg width="5" height="3">
+                                <use href ="source/icon-svg/icon-downward-arrow.svg#icon-downward-arrow"></use>
+                            </svg>
+                        </div>
+
+                        <a class="header-main-div-middle-basket-link" href="/">
+                            <div class="header-main-div-middle-basket-div">
+                                <svg width="28" height="25" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="m.125 1.001 2.81.61 2.383 13.991H17.17" stroke="#383838" stroke-width="1.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M3.613 5.592h15.512L17.17 12.06H4.715" stroke="#383838" stroke-width="1.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M6.603 20.734a1.65 1.65 0 1 0 0-3.299 1.65 1.65 0 0 0 0 3.3ZM15.52 20.734a1.65 1.65 0 1 0 0-3.299 1.65 1.65 0 0 0 0 3.3Z" fill="#383838"></path>
+                                </svg>
+                                Корзина
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="header-main-div-bottom">
+                    <nav class="header-main-div-bottom-inside">
+
+                        <div id="header-main-div-bottom-automotive-products">
+                            <a class = "header-main-div-bottom-text">
+                                ШИНЫ
+                            </a>
+                            <a class = "header-main-div-bottom-text">
+                                ДИСКИ
+                            </a>
+                            <a class = "header-main-div-bottom-text">
+                                АКБ
+                            </a>
+                            <a class = "header-main-div-bottom-text">
+                                МАСЛА
+                            </a>
+                            <a class = "header-main-div-bottom-text">
+                                АВТОТОВАРЫ
+                            </a>
+                        </div>
+
+                        <div class="header-main-div-bottom-separator"></div>
+
+                        <div id="header-main-div-bottom-other">
+                            <a class = "header-main-div-bottom-text">
+                                УСЛУГИ
+                            </a>
+                            <a class = "header-main-div-bottom-text">
+                                АВТОСЕРВИС
+                            </a>
+                            <a class = "header-main-div-bottom-text">
+                                ХРАНЕНИЕ
+                            </a>
+                            <a class = "header-main-div-bottom-text">
+                                ШИНОМОНТАЖ
+                            </a>
+                            <button class="header-main-div-bottom-button">
+                                <svg width="1em" height="1em" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="m13.746 3.166 2.056 2.09M14.012 2.39l1.306-1.285a.366.366 0 0 1 .519.005l2.056 2.09a.366.366 0 0 1-.004.518l-1.307 1.286M7.73 9.078l2.314 2.352" stroke="#fff" stroke-width="1.5" stroke-miterlimit="10"></path>
+                                    <path d="m17.104 4.49-7.317 7.197-3.213.59.642-3.203 7.318-7.198" stroke="#fff" stroke-width="1.5" stroke-miterlimit="10"></path><path d="M17.083 8.47v6.064a.466.466 0 0 1-.466.466H2.153a.466.466 0 0 1-.466-.466V1.472c0-.258.208-.467.466-.467h9.564" stroke="#fff" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"></path>
+                                </svg>
+                                ЗАПИСЬ НА ШИНОМОНТАЖ
+                            </button>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="main-div">
+                <div class="main-div-website-section">
+
+                    <div class="separator-header-main"></div>
+
+                        <div class="main-div-website-section-inside">
+                            <a id="main-div-website-section-main"
+                               class="main-div-website-section-text">
+                                Главная
+                            </a>
+                            <span class="main-div-website-section-separator"></span>
+                            <a id="main-div-website-section-services"
+                               class="main-div-website-section-text">
+                                Услуги
+                            </a>
+                            <span class="main-div-website-section-separator"></span>
+                            <a id="main-div-website-section-tire-repair"
+                               class="main-div-website-section-text">
+                                Шиномонтаж
+                            </a>
+                        </div>
+                </div>
+
+                <div class="section__website" id="main-div__top">
+                    <h1 id="main-div-landing-title">Шиномонтаж в Казани</h1>
+
+                    <div class="main-div-banner">
+
+                        <div class="main-div-banner-central-img">
+                            <img alt="showHide" src="source/element-png/tyre_cover1.png">
+                        </div>
+
+                        <div class="main-div-banner-text">
+                            <h2 id="main-div-banner-text__info">
+                                Правильный шиномонтаж —
+                                <br>
+                                Ваша безопасность
+                                <br>
+                                на дороге!
+                            </h2>
+                            <h2 id="main-div-banner-text__cost">
+                                Узнать стоимость услуг
+                                <br>
+                                Шиномонтажа
+                            </h2>
+                        </div>
+
+                        <div class="main-div-banner-button__container">
+                            <div class="main-div-banner-button-container__inside">
+
+                                <button id="main-div-banner-button-container-inside__appointment">
+                                    Записаться на шиномонтаж
+                                </button>
+
+                                <a id="main-div-banner-button-container-inside__calculate">
+                                    Расчитать
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main-div__advantages">
+                        <div class="main-div-advantages__section">
+                            <svg width="170" height="40" viewBox="0 0 136 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 22.952 16.266 1H27.84v23.345h4.148v9.447h-4.148v6.116H17.377v-6.116H0v-10.84Zm17.377 1.393v-10.84L9.38 24.345h7.997ZM40.556 30.46c3.09 0 5.233 2.158 5.233 4.997 0 2.84-2.142 4.997-5.233 4.997-3.09 0-5.232-2.157-5.232-4.997s2.142-4.996 5.232-4.996ZM53.522 20.917c1.03-.921 2.167-1.626 3.522-2.222-1.084-.487-2.059-1.083-2.872-1.842-1.462-1.3-2.818-3.252-2.818-6.286C51.354 5.147 56.502 0 65.172 0s13.819 5.148 13.819 10.567c0 3.034-1.41 4.985-2.872 6.286-.813.758-1.788 1.355-2.818 1.842 1.3.596 2.493 1.3 3.523 2.222 1.734 1.517 3.522 3.848 3.522 7.262 0 6.502-5.42 11.921-15.173 11.921C55.419 40.1 50 34.681 50 28.179c0-3.414 1.734-5.745 3.522-7.262Zm11.65 10.513c2.44 0 4.336-1.626 4.336-4.064 0-2.439-1.897-4.065-4.335-4.065-2.439 0-4.335 1.626-4.335 4.065 0 2.438 1.896 4.064 4.335 4.064Zm0-16.257c1.897 0 3.523-1.355 3.523-3.251 0-1.897-1.626-3.252-3.522-3.252-1.897 0-3.522 1.355-3.522 3.252 0 1.896 1.625 3.25 3.522 3.25Z" fill="#309"></path>
+                                <g clip-path="url(#rating1_svg__a)">
+                                    <path d="M135.644 2.739c-.331-.501-.84-.72-1.434-.739H93.869c-.623 0-1.142.203-1.523.719-.262.352-.346.759-.346 1.19V15.03c0 .199-.005.397 0 .595.02 1.047.772 1.8 1.815 1.815.52.005 1.038 0 1.558 0h.217V20.321c0 .213.05.406.223.545.203.169.48.184.697.03.074-.055.143-.114.208-.184 1.043-1.046 2.087-2.087 3.125-3.133a.425.425 0 0 1 .341-.144c3.382.005 30.55.005 33.932.005.772 0 1.36-.322 1.706-1.021.084-.174.124-.372.178-.56V3.586c-.113-.288-.188-.595-.356-.848Zm-31.375 10.799-2.844-1.498-2.843 1.498.544-3.173-2.3-2.247 3.18-.46 1.419-2.886 1.419 2.885 3.18.461-2.299 2.247.544 3.173Zm12.575 0L114 12.04l-2.843 1.498.544-3.173-2.3-2.247 3.18-.46L114 4.771l1.419 2.885 3.18.461-2.299 2.247.544 3.173Zm12.575 0-2.844-1.498-2.843 1.498.544-3.173-2.3-2.247 3.18-.46 1.419-2.886 1.424 2.88 3.18.462-2.299 2.246.539 3.178Z" fill="#FF373C"></path>
+                                </g><defs><clipPath id="rating1_svg__a"><path fill="#fff" transform="translate(92 2)" d="M0 0h44v19H0z"></path></clipPath></defs></svg>
+
+                            <span class="main-div__separator"></span>
+
+                            <div class="main-div-landing-text">средняя оценка на Яндекс.Картах</div>
+                        </div>
+
+                        <div class="main-div-advantages__section">
+                            <svg width="170" height="40" viewBox="0 0 166 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.499 1.089h10.586l-7.673 11.872c7.673.611 13.239 6.162 13.239 13.52C29.65 33.785 23.565 40 14.825 40 6.086 40 0 33.785 0 26.48c0-2.762.858-5.072 1.69-6.852.469-1.036 1.067-1.939 1.743-2.868L13.5 1.089Zm6.086 25.392c0-2.763-2.055-4.86-4.76-4.86-2.705 0-4.76 2.098-4.76 4.86 0 2.762 2.055 4.86 4.76 4.86 2.705 0 4.76-2.098 4.76-4.86ZM39.17 27.57a11.845 11.845 0 0 0 1.95 1.62c1.275.823 3.07 1.62 5.177 1.62 3.433 0 5.305-1.886 5.305-4.33 0-2.443-1.846-4.329-5.305-4.329-1.483 0-2.55.425-3.33.824l-1.17.823-7.153-1.089 1.587-21.62h23.85v9.19H45.517l-.52 5.126c.364-.266.858-.478 1.378-.637.91-.372 2.16-.691 3.928-.691 6.892 0 11.912 5.126 11.912 12.43 0 7.57-5.878 13.52-14.565 13.52-4.5 0-8.037-1.514-10.534-3.082-1.43-.93-2.653-1.992-3.771-3.134l5.826-6.241ZM66.688 20c0-12.165 7.672-20 16.412-20C91.839 0 99.51 7.835 99.51 20S91.84 40 83.1 40c-8.74 0-16.412-7.835-16.412-20Zm22.758 0c0-7.304-3.173-10.544-6.346-10.544-3.174 0-6.347 3.24-6.347 10.544s3.173 10.544 6.347 10.544c3.173 0 6.346-3.24 6.346-10.544ZM109.787 28.9h-4.232v-5.256h13.618v5.224h-4.233v10.79h-5.153V28.899ZM121.275 23.644h5.154v4.57h1.958c3.627 0 6.046 2.613 6.046 5.722 0 3.11-2.419 5.722-6.046 5.722h-7.112V23.644Zm6.507 11.785c.95 0 1.526-.653 1.526-1.462 0-.808-.576-1.461-1.526-1.461h-1.353v2.954h1.353v-.031Zm8.321-11.785h5.153v16.014h-5.153V23.644ZM158.299 36.735c-.432.622-.95 1.15-1.555 1.648-1.065.808-2.62 1.648-4.808 1.648-4.693 0-8.176-3.762-8.176-8.333s3.483-8.334 8.176-8.334c2.188 0 3.743.809 4.808 1.648.605.498 1.123 1.026 1.555 1.648l-3.023 3.42a3.98 3.98 0 0 0-.777-.808c-.519-.404-1.267-.808-2.246-.808-1.814 0-3.167 1.461-3.167 3.265 0 1.803 1.353 3.265 3.167 3.265.979 0 1.727-.405 2.246-.809.288-.218.576-.529.777-.808l3.023 3.358ZM162.705 34.123c1.699 0 2.879 1.275 2.879 2.954 0 1.68-1.18 2.954-2.879 2.954-1.698 0-2.879-1.275-2.879-2.954 0-1.68 1.181-2.954 2.879-2.954Z" fill="#309"></path></svg>
+
+                            <span class="main-div__separator"></span>
+
+                            <div class="main-div-landing-text">обслуженных автомобилей за год</div>
+                        </div>
+
+                        <div class="main-div-advantages__section">
+                            <svg width="170" height="40" viewBox="0 0 164 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.215 12.43H0V6.215c2.762-.372 4.542-1.62 5.79-2.868.69-.691 1.302-1.461 1.78-2.258h8.924v37.849H6.215V12.43ZM23.24 20C23.24 7.835 31.076 0 40 0c8.924 0 16.76 7.835 16.76 20S48.924 40 40 40c-8.924 0-16.76-7.835-16.76-20Zm23.24 0c0-7.304-3.24-10.544-6.48-10.544S33.52 12.696 33.52 20 36.76 30.544 40 30.544s6.48-3.24 6.48-10.544ZM61.621 20c0-12.165 7.835-20 16.76-20 8.924 0 16.76 7.835 16.76 20s-7.836 20-16.76 20c-8.925 0-16.76-7.835-16.76-20Zm23.24 0c0-7.304-3.24-10.544-6.48-10.544S71.9 12.696 71.9 20s3.24 10.544 6.48 10.544c3.241 0 6.482-3.24 6.482-10.544ZM106.084 19.07c3.027 0 5.444 2.364 5.444 5.153 0 2.789-2.39 5.153-5.444 5.153-3.081 0-5.445-2.364-5.445-5.153 0-2.789 2.364-5.153 5.445-5.153Zm10.438.425h6.135l-12.271 19.522h-6.135l12.271-19.522Zm-10.438 5.844c.557 0 1.115-.425 1.115-1.116 0-.69-.558-1.115-1.115-1.115-.558 0-1.116.424-1.116 1.115 0 .717.558 1.116 1.116 1.116Zm14.767 3.771c3.028 0 5.445 2.364 5.445 5.153 0 2.789-2.39 5.153-5.445 5.153-3.081 0-5.445-2.364-5.445-5.153 0-2.789 2.391-5.153 5.445-5.153Zm1.116 5.153c0-.69-.558-1.116-1.116-1.116s-1.115.425-1.115 1.116c0 .69.557 1.116 1.115 1.116.558 0 1.116-.399 1.116-1.116Z" fill="#309"></path>
+                                <g clip-path="url(#rating3_svg__a)"><path d="M136.404 38.991a.293.293 0 0 1-.276-.222c-.169-.712-.329-1.433-.499-2.154-.533-2.305-1.059-4.6-1.592-6.896-.107-.472-.009-.864.373-1.157.392-.303.819-.285 1.246-.045 2.038 1.166 4.085 2.332 6.122 3.498.054.035.116.062.17.097a.282.282 0 0 0 .373-.089c.018-.035.045-.062.063-.089a1756.67 1756.67 0 0 0 5.57-8.338c.365-.543.89-.747 1.388-.49.196.099.374.277.517.455 2.171 2.776 4.342 5.57 6.505 8.356a.84.84 0 0 0 .089.106.288.288 0 0 0 .382.063.871.871 0 0 1 .089-.054c1.718-1.148 3.435-2.287 5.153-3.435.32-.213.649-.32 1.032-.195.543.186.827.703.694 1.299-.463 2.011-.925 4.022-1.388 6.024-.232 1.006-.472 2.011-.694 3.017-.045.205-.134.258-.33.258-8.329-.009-16.658 0-24.987-.009Z" fill="#FF373C"></path></g><defs><clipPath id="rating3_svg__a"><path fill="#fff" transform="translate(134 23)" d="M0 0h29.829v16H0z"></path></clipPath></defs></svg>
+
+                            <span class="main-div__separator"></span>
+
+                            <div class="main-div-landing-text">гарантируем качество работы сотрудников</div>
+                        </div>
+
+                        <div class="main-div-advantages__section">
+                            <svg width="170" height="40" viewBox="0 0 159 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M26.068 13.034h-5.693V5.992c2.697-.3 4.345-1.498 5.543-2.696.6-.75 1.199-1.348 1.498-2.247h10.487v36.404H26.218v-24.42h-.15ZM55.432 26.067c-2.397-.3-4.495-1.048-6.292-2.247-3.146-1.797-6.292-5.093-6.292-10.786C42.848 5.993 48.84 0 58.278 0 67.717 0 73.71 5.993 73.71 13.034c0 2.696-1.049 5.243-1.948 7.19-.599 1.05-1.198 2.098-1.947 2.997l-9.438 14.232H47.94l7.49-11.386Zm2.846-9.438c2.098 0 3.596-1.498 3.596-3.595 0-2.098-1.498-3.596-3.596-3.596-2.097 0-3.595 1.498-3.595 3.596 0 2.097 1.498 3.595 3.595 3.595ZM89.139 26.067c-2.397-.3-4.494-1.048-6.292-2.247-3.146-1.797-6.292-5.093-6.292-10.786C76.555 5.993 82.547 0 91.985 0c9.439 0 15.431 5.993 15.431 13.034 0 2.696-1.048 5.243-1.947 7.19-.6 1.05-1.199 2.098-1.948 2.997l-9.438 14.232H81.648l7.491-11.386Zm2.847-9.438c2.097 0 3.595-1.498 3.595-3.595 0-2.098-1.498-3.596-3.596-3.596-2.097 0-3.595 1.498-3.595 3.596 0 2.097 1.498 3.595 3.596 3.595ZM117.304 17.977c-1.049-.449-1.948-1.048-2.697-1.647-1.348-1.199-2.696-3.146-2.696-5.843C111.911 5.243 117.154 0 125.693 0c8.54 0 13.633 5.243 13.633 10.487 0 2.697-1.348 4.644-2.696 5.843-.749.749-1.648 1.198-2.697 1.648v.3c1.199.449 2.397 1.048 3.446 1.947 1.648 1.348 3.445 3.595 3.445 7.04 0 5.993-5.543 11.536-15.131 11.536-9.588 0-15.131-5.393-15.131-11.535 0-3.446 1.648-5.543 3.446-7.041 1.049-.75 2.097-1.349 3.446-1.948v-.3h-.15Zm4.644 8.39c0 1.798 1.498 3.446 3.596 3.446 2.097 0 3.595-1.498 3.595-3.446 0-1.798-1.498-3.446-3.595-3.446-2.098 0-3.596 1.648-3.596 3.446Zm.449-14.682c0 1.648 1.349 2.847 3.147 2.847 1.797 0 3.146-1.199 3.146-2.847s-1.349-2.846-3.146-2.846c-1.798 0-3.147 1.198-3.147 2.846ZM13.483 34.607c-.45.6-.899 1.049-1.498 1.498-1.049.749-2.397 1.348-4.494 1.348C3.296 37.453 0 34.307 0 30.412c0-3.745 3.296-7.041 7.64-7.041 2.098 0 3.596.749 4.495 1.498.6.45 1.049.899 1.498 1.348l-3.146 3.296-.6-.6c-.449-.299-1.048-.598-1.797-.598-1.498 0-2.397.898-2.397 2.097 0 1.198.899 2.097 2.397 2.097.749 0 1.348-.3 1.798-.599.15-.15.3-.3.599-.45l2.996 3.147ZM148.164 23.82h10.637v4.944h-5.094v8.24h-5.393V23.82h-.15Z" fill="#309"></path></svg>
+
+                            <span class="main-div__separator"></span>
+
+                            <div class="main-div-landing-text">наш опыт для вашей уверенности</div>
+                        </div>
+                    </div>
+
+                    <div class="main-div__list__sets">
+                        <h2 class="main-div-list-sets__h2">
+                            3 ВИДА КОМПЛЕКСНЫХ РАБОТ. ВЫБЕРИТЕ СВОЙ:
+                        </h2>
+
+                        <div class="main-div-list-sets__container">
+
+                            <div class="main-div-list-sets-container__item">
+
+                                <div class="main-div-list-sets-container-item__top">
+                                    <span class="main-div-list-sets-container-item-top__name">Комплекс 1</span>
+                                    <span class="main-div-list-sets-container-item-top__image">
+                                        <img src="source/element-png/complex1.png">
+                                    </span>
+                                </div>
+
+                                <div class="main-div-list-sets-container-item__bottom">
+                                    <div class="main-div-list-sets-container-item-bottom__top">
+                                        <h3 class="main-div-list-sets-container-item-bottom__tittle">Смена колёс в сборе</h3>
+                                        <span class="main-div-list-sets-container-item-bottom__text">
+                                            для тех, у кого 2 комплекта шин
+                                            <br>
+                                             и 2 комплекта дисков
+                                        </span>
+                                    </div>
+
+                                    <ul class="main-div-list-sets-container-item-bottom__enum">
+                                        <li class="main-div-list-sets-container-item-bottom-enum__element">
+                                            снятие и установка колёс,</li>
+                                        <li class="main-div-list-sets-container-item-bottom-enum__element">
+                                            технологическая мойка колёс,</li>
+                                        <li class="main-div-list-sets-container-item-bottom-enum__element">
+                                            балансировка собранных колёс,</li>
+                                        <li class="main-div-list-sets-container-item-bottom-enum__element">
+                                            обработка ступиц медной смазкой.</li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                            <div class="main-div-list-sets-container__item">
+
+                                <div class="main-div-list-sets-container-item__top">
+                                    <span class="main-div-list-sets-container-item-top__name">Комплекс 2</span>
+                                    <span class="main-div-list-sets-container-item-top__image">
+                                        <img src="source/element-png/complex2.png">
+                                    </span>
+                                </div>
+
+                                <div class="main-div-list-sets-container-item__bottom">
+                                    <div class="main-div-list-sets-container-item-bottom__top">
+                                        <h3 class="main-div-list-sets-container-item-bottom__tittle">Смена колёс в сборе</h3>
+                                        <span class="main-div-list-sets-container-item-bottom__text">
+                                            для тех, у кого 2 комплекта шин
+                                            <br>
+                                             и 2 комплекта дисков
+                                        </span>
+                                    </div>
+
+                                    <ul class="main-div-list-sets-container-item-bottom__enum">
+                                        <li class="main-div-list-sets-container-item-bottom-enum__element">
+                                            снятие и установка колёс,</li>
+                                        <li class="main-div-list-sets-container-item-bottom-enum__element">
+                                            технологическая мойка колёс,</li>
+                                        <li class="main-div-list-sets-container-item-bottom-enum__element
+                                                   main-div-list-sets-container-item-bottom-enum__element-bold">
+                                            демонтаж/монтаж шин на диск</li>
+                                        <li class="main-div-list-sets-container-item-bottom-enum__element
+                                                   main-div-list-sets-container-item-bottom-enum__element-bold">
+                                            замена вентиля
+                                            <div class="main-div-list-sets-container-item-bottom__info__icon">
+                                                <img src="source/icon-svg/info2.svg">
+                                            </div></li>
+
+                                        <li class="main-div-list-sets-container-item-bottom-enum__element">
+                                            балансировка собранных колёс,</li>
+                                        <li class="main-div-list-sets-container-item-bottom-enum__element">
+                                            обработка ступиц медной смазкой.</li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                            <div class="main-div-list-sets-container__item">
+
+                                <div class="main-div-list-sets-container-item__top">
+                                    <span class="main-div-list-sets-container-item-top__name">Комплекс 3</span>
+                                    <span class="main-div-list-sets-container-item-top__image">
+                                        <img src="source/element-png/complex3.png">
+                                    </span>
+                                </div>
+
+                                <div class="main-div-list-sets-container-item__bottom">
+                                    <div class="main-div-list-sets-container-item-bottom__top">
+                                        <h3 class="main-div-list-sets-container-item-bottom__tittle">Сезонная замена шин</h3>
+                                        <span class="main-div-list-sets-container-item-bottom__text">
+                                            для тех, у кого 2 комплекта шин
+                                            <br>
+                                             и 1 комплекта дисков
+                                        </span>
+                                    </div>
+
+                                    <div class="main-div-list-sets-container-item-bottom__die">
+                                        <div class="main-div-list-sets-container-item-bottom-die__result">
+                                            Result
+                                            <div class="main-div-list-sets-container-item-bottom__info__icon">
+                                                <img src="source/icon-svg/info1.svg">
+                                            </div>
+                                        </div>
+
+                                        <div class="main-div-list-sets-container-item-bottom-die__low__profile">
+                                            низкий профиль
+                                            <div class="main-div-list-sets-container-item-bottom__info__icon">
+                                                <img src="source/icon-svg/info1.svg">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <ul class="main-div-list-sets-container-item-bottom__enum">
+                                        <li class="main-div-list-sets-container-item-bottom-enum__element">
+                                            снятие и установка колёс,</li>
+                                        <li class="main-div-list-sets-container-item-bottom-enum__element">
+                                            технологическая мойка колёс,</li>
+                                        <li class="main-div-list-sets-container-item-bottom-enum__element
+                                                   main-div-list-sets-container-item-bottom-enum__element-bold">
+                                            демонтаж/монтаж шин на диск</li>
+                                        <li class="main-div-list-sets-container-item-bottom-enum__element
+                                                   main-div-list-sets-container-item-bottom-enum__element-bold">
+                                            замена вентиля
+                                            <div class="main-div-list-sets-container-item-bottom__info__icon">
+                                                <img src="source/icon-svg/info2.svg">
+                                            </div></li>
+
+                                        <li class="main-div-list-sets-container-item-bottom-enum__element">
+                                            балансировка собранных колёс,</li>
+                                        <li class="main-div-list-sets-container-item-bottom-enum__element">
+                                            обработка ступиц медной смазкой.</li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-div__nuances">
+                    <div class="main-div-nuances__inside">
+                        <h2 class="main-div-nuances-inside__tittle">Продуманы все нюансы</h2>
+                        <div class="main-div-nuances-inside__tables">
+
+                            <div id="main-div-nuances-inside-tables__table1" class="main-div-nuances-inside-tables__table">
+                                <h3 class="main-div-nuances-inside-tables-table__tittle">Выгодно!</h3>
+                                <span class="main-div-nuances-inside-tables-table__text">
+                                    Шиномонтажные работы в комплексе дешевле, чем по отдельности.
+                                </span>
+                            </div>
+
+                            <div id="main-div-nuances-inside-tables__table2" class="main-div-nuances-inside-tables__table">
+
+                                <h3 class="main-div-nuances-inside-tables-table__tittle">Без переплат!
+                                    <img id = "main-div-nuances-inside-tables-table-tittle__icon" src="source/icon-svg/info2.svg">
+                                </h3>
+
+
+
+
+
+                                <span class="main-div-nuances-inside-tables-table__text">
+                                    Балансировочные грузики, вентили, медная смазка — бесплатно!
+                                </span>
+                            </div>
+
+                            <div id="main-div-nuances-inside-tables__table3" class="main-div-nuances-inside-tables__table">
+                                <h3 class="main-div-nuances-inside-tables-table__tittle">Удобно!</h3>
+                                <span class="main-div-nuances-inside-tables-table__text">
+                                    Оставьте
+                                    <a href="/" class="main-div-nuances-inside-tables-table-text__link">шины на хранение в Колесо.ру</a>
+                                    сразу после шиномонтажа.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section__website">
+                    <div class="main-div-bottom__calculator">
+                        <div class="main-div-bottom-calculator-top">
+                            <h2 class="main-div-bottom-calculator__tittle">
+                                Стоимость шиномонтажа
+                            </h2>
+
+                            <div class="main-div-bottom-calculator__filters">
+                                <div class="main-div-bottom-calculator-filters__item">
+
+                                    <div class="main-div-bottom-calculator-filters-item__text">Марка</div>
+
+                                    <!--                                Хз как делать-->
+                                    <div class="main-div-bottom-calculator-filters-item__select">
+                                        <div class="main-div-bottom-calculator-filters-item-select__inside">
+                                            <div class="main-div-bottom-calculator-filters-item-select-inside__text">
+                                                ACURA
+                                            </div>
+
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 17" fill="none" class="SelectButton_Arrow__6gVPa">
+                                                <path d="m4 6.123 4 4 4-4" stroke="#555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="main-div-bottom-calculator-filters__item">
+                                    <div class="main-div-bottom-calculator-filters-item__text">Марка</div>
+
+                                    <!--Хз как делать-->
+                                    <div class="main-div-bottom-calculator-filters-item__select">
+                                        <div class="main-div-bottom-calculator-filters-item-select__inside">
+                                            <div class="main-div-bottom-calculator-filters-item-select-inside__text">
+                                                —
+                                            </div>
+
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 17" fill="none" class="SelectButton_Arrow__6gVPa">
+                                                <path d="m4 6.123 4 4 4-4" stroke="#555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="main-div-bottom-calculator-filters__item">
+                                    <div class="main-div-bottom-calculator-filters-item__text">
+                                        Диаметр колеса
+                                        <span class="icon__info" id="icon-info__filters">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="none">
+                                            <path d="M8.25.25a7.751 7.751 0 0 0 0 15.5 7.75 7.75 0 1 0 0-15.5Zm0 3.438a1.313 1.313 0 1 1 0 2.625 1.313 1.313 0 0 1 0-2.625ZM10 11.625a.375.375 0 0 1-.375.375h-2.75a.375.375 0 0 1-.375-.375v-.75c0-.207.168-.375.375-.375h.375v-2h-.375a.375.375 0 0 1-.375-.375v-.75c0-.207.168-.375.375-.375h2c.207 0 .375.168.375.375V10.5h.375c.207 0 .375.168.375.375v.75Z" fill="#DDE0F9"></path></svg>
+                                    </span>
+                                    </div>
+
+                                    <div class="filters-item-select__list">
+
+                                        <select class="main-div-bottom-calculator-filters-item-select-inside__text">
+
+                                            <option>—</option>
+
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+                                            <option value="24">24</option>
+                                        </select>
+
+
+                                        <svg width="10" height="1em" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg" hieght="5" class="Select_Arrow__4XorV"><path d="m1 .5 5 5 5-5" stroke="#555" stroke-linecap="round"></path></svg>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="main-div-bottom-calculator-filters__item">
+                                <span class="main-div-bottom-calculator-filters-item__text">
+                                    Выберите шинный центр
+                                </span>
+
+                                    <div class="filters-item-select__list">
+
+                                        <select class="main-div-bottom-calculator-filters-item-select-inside__text">
+
+                                            <option>—</option>
+                                            <option value="Гаврилова, 23">Гаврилова, 23</option>
+
+                                        </select>
+
+
+                                        <svg width="10" height="1em" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg" hieght="5" class="Select_Arrow__4XorV"><path d="m1 .5 5 5 5-5" stroke="#555" stroke-linecap="round"></path></svg>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="main-div-bottom-calculator__accept">
+                                <input type="checkbox" id="has-discount-card">
+                                <label for="has-discount-card">У меня есть дисконтная карта</label>
+                            </div>
+                        </div>
+
+                        <button class="main-div-bottom-calculator__button">Рассчитать</button>
+                    </div>
+
+                    <div class="map">
+                        <div class="map-tittle">
+                            <h2 class="map-tittle-main-text">
+                                Шиномонтаж в центре Колесо.ру в Казани
+                            </h2>
+                            <a href="https://cs16.pikabu.ru/s/2025/10/13/15/ookcimga_lg.png"
+                               class="map-tittle-href-text">
+                                Все шинные центры
+                            </a>
+                        </div>
+
+
+                        <div class="address">
+                            <span class="address-сentre">
+                                1 центр в Казани
+                            </span>
+
+                            <div class="address-search">
+                                <input class="address-search-input" type="search" placeholder="Искать адрес">
+                                <svg width="1em" height="1em" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.698 15.395a7.651 7.651 0 0 0 4.712-1.624l4.23 4.23 1.36-1.36-4.23-4.23a7.65 7.65 0 0 0 1.625-4.713C15.395 3.453 11.942 0 7.698 0 3.453 0 0 3.453 0 7.698c0 4.244 3.453 7.697 7.698 7.697Zm0-13.47a5.78 5.78 0 0 1 5.773 5.773 5.78 5.78 0 0 1-5.773 5.773 5.78 5.78 0 0 1-5.774-5.773 5.78 5.78 0 0 1 5.774-5.774Z" fill="#555"></path>
+                                </svg>
+                            </div>
+
+                            <div class="address-street">
+                                <div class="address-street-tittle">
+                                    Гаврилова, 23
+
+                                    <button>
+                                        <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="m1 1 6 6 6-6" stroke="#8B8B8B" stroke-width="2" stroke-linejoin="round">
+                                            </path></svg>
+                                    </button>
+
+                                </div>
+
+                                <div class="address-street-distance">
+                                    <svg width="17" height="6" viewBox="0 0 18 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.01 0c-1.27 0-2.4.8-2.82 2H5.83a3 3 0 0 0-5.825.84c-.022.393.034.788.165 1.16a3.017 3.017 0 0 0 3.84 1.83c.85-.3 1.5-.98 1.82-1.83h5.37c.55 1.56 2.27 2.38 3.81 1.83A3 3 0 0 0 16.86 2c-.43-1.2-1.57-2-2.85-2Zm0 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z" fill="#309">
+                                    </path></svg>
+                                    8 км от вас
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="map-integration">
+                            <div id="map"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="cheaper">
+                        <h2 class="cheaper__tittle">
+                            можно дешевле!
+                        </h2>
+
+                        <div class="cheaper__grid">
+
+                            <div class="cheaper-grid__item">
+                                <svg width="32" height="43" viewBox="0 0 32 43" fill="none" xmlns="http://www.w3.org/2000/svg" class="CheapBlocks_Img__Hm6B6">
+                                    <path d="M31.553 0v33.5L16.275 43 .997 33.5V0h30.556Z" fill="#F33"></path><path d="m15.67 17.818.193-1.974c.075-.793.816-1.332 1.564-1.138 1.126.292 1.917 1.337 1.917 2.537v2.529c0 .562 0 .844.122 1.05.069.117.164.216.277.287.2.126.473.126 1.017.126h.33c1.42 0 2.128 0 2.565.325.328.244.558.602.65 1.007.122.541-.15 1.219-.697 2.572l-.271.675c-.158.391-.222.813-.189 1.233.194 2.395-1.706 4.413-4.027 4.28l-8.687-.499c-.949-.054-1.423-.081-1.852-.46-.429-.38-.51-.77-.67-1.551a11.937 11.937 0 0 1 .045-5.031c.236-1.04 1.23-1.6 2.256-1.467 2.72.35 5.185-1.682 5.458-4.5v0Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="m11.832 22.583-.114.381c-.74 2.464-.7 5.096.114 7.536" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                </path></svg>
+
+                                <h3 class="cheaper-grid-item__tittle">
+                                    Бесплатный шиномонтаж
+                                </h3>
+
+                                <div class="cheaper-grid-item__text">
+                                    При покупке комплекта шин и дисков определенных брендов
+                                </div>
+
+                                <a href="/" class="cheaper-grid-item__href">
+                                    Подробнее
+                                </a>
+                            </div>
+
+                            <div class="cheaper-grid__item">
+
+                                <svg width="32" height="43" viewBox="0 0 32 43" fill="none" xmlns="http://www.w3.org/2000/svg" class="CheapBlocks_Img__Hm6B6">
+                                    <path d="M31.553 0v33.5L16.275 43 .997 33.5V0h30.556Z" fill="#309"></path><path d="M16.001 32.5c-.537-.477-1.145-.973-1.787-1.5h-.008c-2.263-1.85-4.827-3.943-5.96-6.452A6.19 6.19 0 0 1 7.668 22a4.491 4.491 0 0 1 4.583-4.5 5.131 5.131 0 0 1 2.774.82c.363.235.692.52.976.847.287-.325.615-.61.978-.848a5.127 5.127 0 0 1 2.772-.819 4.49 4.49 0 0 1 4.584 4.5 6.183 6.183 0 0 1-.579 2.552c-1.132 2.509-3.695 4.601-5.958 6.448l-.008.007c-.644.524-1.25 1.02-1.788 1.5V32.5Zm-3.75-13.333a2.946 2.946 0 0 0-2.083.826A2.785 2.785 0 0 0 9.335 22c.009.642.155 1.275.426 1.857a10.263 10.263 0 0 0 2.131 2.893c.826.833 1.776 1.64 2.598 2.318.227.188.459.377.69.566l.146.12c.223.181.453.37.675.554l.011-.01.005-.004h.005l.008-.006h.008l.015-.012.034-.028.006-.005.01-.006h.004l.008-.007.553-.454.145-.12c.234-.19.466-.38.693-.567.822-.678 1.773-1.484 2.599-2.322a10.248 10.248 0 0 0 2.13-2.892A4.536 4.536 0 0 0 22.67 22a2.788 2.788 0 0 0-.834-2 2.946 2.946 0 0 0-2.084-.833 3.323 3.323 0 0 0-2.491 1.092L16 21.71l-1.258-1.45a3.324 3.324 0 0 0-2.492-1.092Z" fill="#fff" stroke="#fff">
+                                </path></svg>
+
+                                <h3 class="cheaper-grid-item__tittle">
+                                    Скидки для постоянных клиентов
+                                </h3>
+
+                                <div class="cheaper-grid-item__text">
+                                    Получите скидку 10% на услуги сервиса
+                                </div>
+
+                                <a href="/" class="cheaper-grid-item__href">
+                                    Как получить
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="consultation">
+                        <div class="consultation-left">
+                            <div class="consultation-left__icon">
+                                Консультация
+                            </div>
+                            <a href="tel:+78001006878" class="consultation-left__number">
+                                8 (800) 100-68-78
+                            </a>
+
+                            <div class="consultation-left__text">
+                                Отвечаем на вопросы и записываем на шиномонтаж
+                            </div>
+                        </div>
+
+                        <div class="consultation-image">
+                            <img src="source/element-png/woman.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="gallery">
+                        <h2 class="gallery__tittle">
+                            Заезжайте, мы Вам рады!
+                        </h2>
+
+                        <div class="gallery__buttons">
+                            <button class="gallery-buttons__button" type="button">Шиномонтаж</button>
+                            <button class="gallery-buttons__button" type="button">Зона ожидания</button>
+                            <button class="gallery-buttons__button" type="button">Кассовая зона</button>
+                        </div>
+
+                        <div class="gallery__images">
+                            <img src="source/element-png/Glad13.png" alt="">
+                            <img src="source/element-png/Glad14.png" alt="">
+                            <img src="source/element-png/Glad15.png" alt="">
+                            <img src="source/element-png/Glad16.png" alt="">
+                            <img src="source/element-png/Glad17.png" alt="">
+                            <img src="source/element-png/Glad18.png" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="our-experience">
+
+                        <h2 class="our-experience__tittle">
+                            Наш опыт для вашей уверенности
+                        </h2>
+
+                        <div class="our-experience__grid">
+
+                            <div class="our-experience-grid__item">
+
+                                <div class="our-experience-grid-item__info">
+                                    <h3 class="our-experience-grid-item__tittle">
+                                        Опыт профессионалов
+                                    </h3>
+
+                                    <div class="our-experience-grid-item__text">
+                                        Регулярное повышение квалификации сотрудников в
+                                        <b>"Учебном центре Колесо" —</b>
+                                        совместном проекте Колесо.ру и
+                                        <b>Техноград</b>
+                                    </div>
+                                </div>
+
+                                <img src="source/element-png/experi.png" alt="Человек с гаечным ключём">
+
+                            </div>
+
+
+                            <div class="our-experience-grid__item">
+
+                                <div class="our-experience-grid-item__info">
+                                    <h3 class="our-experience-grid-item__tittle">
+                                        Опыт производителей
+                                    </h3>
+
+                                    <div class="our-experience-grid-item__text">
+                                        Шиномонтажное оборудование премиум-класса. Станки и инструменты фирм <b>Hofmann</b> и <b>Corghi</b>
+                                    </div>
+                                </div>
+
+                                <img src="source/element-png/experi2.png" alt="Человек с гаечным ключём">
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="video">
+                        <h2 class="video__tittle">
+                            Делимся опытом
+                        </h2>
+
+                        <div class="video__grid">
+                            <div class="video-grid__item">
+
+                                <div class="video-grid-item__preview">
+                                    <img src="source/element-png/share1.png" alt="Евгений Беляк">
+                                </div>
+
+                                <div class="video-grid-item__icon__video">
+                                    Видео
+                                </div>
+
+                                <h3 class="video-grid-item__name">
+                                    Евгений Беляк
+                                </h3>
+
+                                <div class="video-grid-item__text">
+                                    Руководитель розничной сети Колесо.ру
+                                </div>
+
+                                <div class="video-grid-item-preview__text">
+                                    Как выбрать правильный шиномонтаж
+                                </div>
+                            </div>
+
+
+
+                            <div class="video-grid__item">
+
+                                <div class="video-grid-item__preview">
+                                    <img src="source/element-png/share2.png" alt="Евгений Беляк">
+                                </div>
+
+                                <div class="video-grid-item__icon__video">
+                                    Видео
+                                </div>
+
+                                <h3 class="video-grid-item__name">
+                                    Дмитрий Трошин
+                                </h3>
+
+                                <div class="video-grid-item__text">
+                                    Руководитель направления контента Колесо.ру
+                                </div>
+
+                                <div class="video-grid-item-preview__text">
+                                    12 правил комфортного шиномонтажа
+                                </div>
+                            </div>
+
+
+                            <div class="video-grid__item">
+
+                                <div class="video-grid-item__preview">
+                                    <img src="source/element-png/share3.png" alt="Алексей Соколов">
+                                </div>
+
+                                <div class="video-grid-item__icon__video">
+                                    Интервью
+                                </div>
+
+                                <h3 class="video-grid-item__name">
+                                    Алексей Соколов
+                                </h3>
+
+                                <div class="video-grid-item__text">
+                                    Руководитель учебного центра Колесо.ру
+                                </div>
+
+                                <div class="video-grid-item-preview__text">
+                                    10 ВОПРОСОВ ПРО шиномонтаж
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="reviews">
+                        <h2 class="reviews__tittle">
+                            Отзывы наших клиентов
+                        </h2>
+
+                        <div class="reviews__grid">
+                            <div class="reviews-grid__item">
+
+                                <div class="reviews-grid-item__top">
+
+                                    <div class="reviews-grid-item-top__name">
+                                        Игорь
+                                    </div>
+
+                                    <div class="reviews-grid-item-top__date">
+                                        21 июня 2026
+                                    </div>
+
+                                    <svg width="12" height="12" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" style="color: rgb(255, 193, 7);"><path d="M11 0c-.469 0-.938.254-1.18.765l-2.685 5.69-6.008.91C.049 7.53-.383 8.918.399 9.713l4.346 4.427-1.028 6.253c-.185 1.121.946 1.976 1.908 1.448L11 18.892V0Zm0 0c.469 0 .938.254 1.18.765l2.685 5.69 6.008.91c1.078.164 1.51 1.552.728 2.347l-4.346 4.427 1.028 6.253c.185 1.121-.946 1.976-1.908 1.448L11 18.892V0Z" fill="currentColor"></path></svg>
+                                    <svg width="12" height="12" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" style="color: rgb(255, 193, 7);"><path d="M11 0c-.469 0-.938.254-1.18.765l-2.685 5.69-6.008.91C.049 7.53-.383 8.918.399 9.713l4.346 4.427-1.028 6.253c-.185 1.121.946 1.976 1.908 1.448L11 18.892V0Zm0 0c.469 0 .938.254 1.18.765l2.685 5.69 6.008.91c1.078.164 1.51 1.552.728 2.347l-4.346 4.427 1.028 6.253c.185 1.121-.946 1.976-1.908 1.448L11 18.892V0Z" fill="currentColor"></path></svg>
+                                    <svg width="12" height="12" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" style="color: rgb(255, 193, 7);"><path d="M11 0c-.469 0-.938.254-1.18.765l-2.685 5.69-6.008.91C.049 7.53-.383 8.918.399 9.713l4.346 4.427-1.028 6.253c-.185 1.121.946 1.976 1.908 1.448L11 18.892V0Zm0 0c.469 0 .938.254 1.18.765l2.685 5.69 6.008.91c1.078.164 1.51 1.552.728 2.347l-4.346 4.427 1.028 6.253c.185 1.121-.946 1.976-1.908 1.448L11 18.892V0Z" fill="currentColor"></path></svg>
+                                    <svg width="12" height="12" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" style="color: rgb(255, 193, 7);"><path d="M11 0c-.469 0-.938.254-1.18.765l-2.685 5.69-6.008.91C.049 7.53-.383 8.918.399 9.713l4.346 4.427-1.028 6.253c-.185 1.121.946 1.976 1.908 1.448L11 18.892V0Zm0 0c.469 0 .938.254 1.18.765l2.685 5.69 6.008.91c1.078.164 1.51 1.552.728 2.347l-4.346 4.427 1.028 6.253c.185 1.121-.946 1.976-1.908 1.448L11 18.892V0Z" fill="currentColor"></path></svg>
+                                    <svg width="12" height="12" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" style="color: rgb(255, 193, 7);"><path d="M11 0c-.469 0-.938.254-1.18.765l-2.685 5.69-6.008.91C.049 7.53-.383 8.918.399 9.713l4.346 4.427-1.028 6.253c-.185 1.121.946 1.976 1.908 1.448L11 18.892V0Zm0 0c.469 0 .938.254 1.18.765l2.685 5.69 6.008.91c1.078.164 1.51 1.552.728 2.347l-4.346 4.427 1.028 6.253c.185 1.121-.946 1.976-1.908 1.448L11 18.892V0Z" fill="currentColor"></path></svg>
+
+                                </div>
+
+                                <div class="reviews-grid-item__bottom">
+                                    Купил и поставил новые шины. Сервисом доволен. Еще по дискам все разузнал, это следующим рейсом
+                                </div>
+                            </div>
+
+                            <div class="reviews-grid__item">
+
+                                <div class="reviews-grid-item__top">
+
+                                    <div class="reviews-grid-item-top__name">
+                                        Паша
+                                    </div>
+
+                                    <div class="reviews-grid-item-top__date">
+                                        8 июня 2026
+                                    </div>
+
+                                    <svg width="12" height="12" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" style="color: rgb(255, 193, 7);"><path d="M11 0c-.469 0-.938.254-1.18.765l-2.685 5.69-6.008.91C.049 7.53-.383 8.918.399 9.713l4.346 4.427-1.028 6.253c-.185 1.121.946 1.976 1.908 1.448L11 18.892V0Zm0 0c.469 0 .938.254 1.18.765l2.685 5.69 6.008.91c1.078.164 1.51 1.552.728 2.347l-4.346 4.427 1.028 6.253c.185 1.121-.946 1.976-1.908 1.448L11 18.892V0Z" fill="currentColor"></path></svg>
+                                    <svg width="12" height="12" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" style="color: rgb(255, 193, 7);"><path d="M11 0c-.469 0-.938.254-1.18.765l-2.685 5.69-6.008.91C.049 7.53-.383 8.918.399 9.713l4.346 4.427-1.028 6.253c-.185 1.121.946 1.976 1.908 1.448L11 18.892V0Zm0 0c.469 0 .938.254 1.18.765l2.685 5.69 6.008.91c1.078.164 1.51 1.552.728 2.347l-4.346 4.427 1.028 6.253c.185 1.121-.946 1.976-1.908 1.448L11 18.892V0Z" fill="currentColor"></path></svg>
+                                    <svg width="12" height="12" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" style="color: rgb(255, 193, 7);"><path d="M11 0c-.469 0-.938.254-1.18.765l-2.685 5.69-6.008.91C.049 7.53-.383 8.918.399 9.713l4.346 4.427-1.028 6.253c-.185 1.121.946 1.976 1.908 1.448L11 18.892V0Zm0 0c.469 0 .938.254 1.18.765l2.685 5.69 6.008.91c1.078.164 1.51 1.552.728 2.347l-4.346 4.427 1.028 6.253c.185 1.121-.946 1.976-1.908 1.448L11 18.892V0Z" fill="currentColor"></path></svg>
+                                    <svg width="12" height="12" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" style="color: rgb(255, 193, 7);"><path d="M11 0c-.469 0-.938.254-1.18.765l-2.685 5.69-6.008.91C.049 7.53-.383 8.918.399 9.713l4.346 4.427-1.028 6.253c-.185 1.121.946 1.976 1.908 1.448L11 18.892V0Zm0 0c.469 0 .938.254 1.18.765l2.685 5.69 6.008.91c1.078.164 1.51 1.552.728 2.347l-4.346 4.427 1.028 6.253c.185 1.121-.946 1.976-1.908 1.448L11 18.892V0Z" fill="currentColor"></path></svg>
+                                    <svg width="12" height="12" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" style="color: rgb(255, 193, 7);"><path d="M11 0c-.469 0-.938.254-1.18.765l-2.685 5.69-6.008.91C.049 7.53-.383 8.918.399 9.713l4.346 4.427-1.028 6.253c-.185 1.121.946 1.976 1.908 1.448L11 18.892V0Zm0 0c.469 0 .938.254 1.18.765l2.685 5.69 6.008.91c1.078.164 1.51 1.552.728 2.347l-4.346 4.427 1.028 6.253c.185 1.121-.946 1.976-1.908 1.448L11 18.892V0Z" fill="currentColor"></path></svg>
+
+                                </div>
+
+                                <div class="reviews-grid-item__bottom">
+                                    В день первого снега была живая очередь, но ждал всего час. Работали быстро без записи. Заодно оставил шины на хранение цена смешная.
+                                </div>
+                            </div>
+
+                            <div class="reviews-grid__item">
+
+                                <div class="reviews-grid-item__top">
+
+                                    <div class="reviews-grid-item-top__name">
+                                        Михаил
+                                    </div>
+
+                                    <div class="reviews-grid-item-top__date">
+                                        30 апреля 2026
+                                    </div>
+
+                                    <svg width="12" height="12" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" style="color: rgb(255, 193, 7);"><path d="M11 0c-.469 0-.938.254-1.18.765l-2.685 5.69-6.008.91C.049 7.53-.383 8.918.399 9.713l4.346 4.427-1.028 6.253c-.185 1.121.946 1.976 1.908 1.448L11 18.892V0Zm0 0c.469 0 .938.254 1.18.765l2.685 5.69 6.008.91c1.078.164 1.51 1.552.728 2.347l-4.346 4.427 1.028 6.253c.185 1.121-.946 1.976-1.908 1.448L11 18.892V0Z" fill="currentColor"></path></svg>
+                                    <svg width="12" height="12" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" style="color: rgb(255, 193, 7);"><path d="M11 0c-.469 0-.938.254-1.18.765l-2.685 5.69-6.008.91C.049 7.53-.383 8.918.399 9.713l4.346 4.427-1.028 6.253c-.185 1.121.946 1.976 1.908 1.448L11 18.892V0Zm0 0c.469 0 .938.254 1.18.765l2.685 5.69 6.008.91c1.078.164 1.51 1.552.728 2.347l-4.346 4.427 1.028 6.253c.185 1.121-.946 1.976-1.908 1.448L11 18.892V0Z" fill="currentColor"></path></svg>
+                                    <svg width="12" height="12" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" style="color: rgb(255, 193, 7);"><path d="M11 0c-.469 0-.938.254-1.18.765l-2.685 5.69-6.008.91C.049 7.53-.383 8.918.399 9.713l4.346 4.427-1.028 6.253c-.185 1.121.946 1.976 1.908 1.448L11 18.892V0Zm0 0c.469 0 .938.254 1.18.765l2.685 5.69 6.008.91c1.078.164 1.51 1.552.728 2.347l-4.346 4.427 1.028 6.253c.185 1.121-.946 1.976-1.908 1.448L11 18.892V0Z" fill="currentColor"></path></svg>
+                                    <svg width="12" height="12" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" style="color: rgb(255, 193, 7);"><path d="M11 0c-.469 0-.938.254-1.18.765l-2.685 5.69-6.008.91C.049 7.53-.383 8.918.399 9.713l4.346 4.427-1.028 6.253c-.185 1.121.946 1.976 1.908 1.448L11 18.892V0Zm0 0c.469 0 .938.254 1.18.765l2.685 5.69 6.008.91c1.078.164 1.51 1.552.728 2.347l-4.346 4.427 1.028 6.253c.185 1.121-.946 1.976-1.908 1.448L11 18.892V0Z" fill="currentColor"></path></svg>
+                                    <svg width="12" height="12" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" style="color: rgb(255, 193, 7);"><path d="M11 0c-.469 0-.938.254-1.18.765l-2.685 5.69-6.008.91C.049 7.53-.383 8.918.399 9.713l4.346 4.427-1.028 6.253c-.185 1.121.946 1.976 1.908 1.448L11 18.892V0Zm0 0c.469 0 .938.254 1.18.765l2.685 5.69 6.008.91c1.078.164 1.51 1.552.728 2.347l-4.346 4.427 1.028 6.253c.185 1.121-.946 1.976-1.908 1.448L11 18.892V0Z" fill="currentColor"></path></svg>
+
+                                </div>
+
+                                <div class="reviews-grid-item__bottom">
+                                    Никуда больше не ездил. Здесь купил новые шины, поставил, еще проконсультировался. Сервис комплексный.
+                                </div>
+                            </div>
+
+                            <div class="reviews-grid__item">
+
+                                <div class="reviews-grid-item__top">
+
+                                    <div class="reviews-grid-item-top__name">
+                                        Кирилл
+                                    </div>
+
+                                    <div class="reviews-grid-item-top__date">
+                                        15 апреля 2026
+                                    </div>
+
+                                    <svg width="12" height="12" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" style="color: rgb(255, 193, 7);"><path d="M11 0c-.469 0-.938.254-1.18.765l-2.685 5.69-6.008.91C.049 7.53-.383 8.918.399 9.713l4.346 4.427-1.028 6.253c-.185 1.121.946 1.976 1.908 1.448L11 18.892V0Zm0 0c.469 0 .938.254 1.18.765l2.685 5.69 6.008.91c1.078.164 1.51 1.552.728 2.347l-4.346 4.427 1.028 6.253c.185 1.121-.946 1.976-1.908 1.448L11 18.892V0Z" fill="currentColor"></path></svg>
+                                    <svg width="12" height="12" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" style="color: rgb(255, 193, 7);"><path d="M11 0c-.469 0-.938.254-1.18.765l-2.685 5.69-6.008.91C.049 7.53-.383 8.918.399 9.713l4.346 4.427-1.028 6.253c-.185 1.121.946 1.976 1.908 1.448L11 18.892V0Zm0 0c.469 0 .938.254 1.18.765l2.685 5.69 6.008.91c1.078.164 1.51 1.552.728 2.347l-4.346 4.427 1.028 6.253c.185 1.121-.946 1.976-1.908 1.448L11 18.892V0Z" fill="currentColor"></path></svg>
+                                    <svg width="12" height="12" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" style="color: rgb(255, 193, 7);"><path d="M11 0c-.469 0-.938.254-1.18.765l-2.685 5.69-6.008.91C.049 7.53-.383 8.918.399 9.713l4.346 4.427-1.028 6.253c-.185 1.121.946 1.976 1.908 1.448L11 18.892V0Zm0 0c.469 0 .938.254 1.18.765l2.685 5.69 6.008.91c1.078.164 1.51 1.552.728 2.347l-4.346 4.427 1.028 6.253c.185 1.121-.946 1.976-1.908 1.448L11 18.892V0Z" fill="currentColor"></path></svg>
+                                    <svg width="12" height="12" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" style="color: rgb(255, 193, 7);"><path d="M11 0c-.469 0-.938.254-1.18.765l-2.685 5.69-6.008.91C.049 7.53-.383 8.918.399 9.713l4.346 4.427-1.028 6.253c-.185 1.121.946 1.976 1.908 1.448L11 18.892V0Zm0 0c.469 0 .938.254 1.18.765l2.685 5.69 6.008.91c1.078.164 1.51 1.552.728 2.347l-4.346 4.427 1.028 6.253c.185 1.121-.946 1.976-1.908 1.448L11 18.892V0Z" fill="currentColor"></path></svg>
+                                    <svg width="12" height="12" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" style="color: rgb(255, 193, 7);"><path d="M11 0c-.469 0-.938.254-1.18.765l-2.685 5.69-6.008.91C.049 7.53-.383 8.918.399 9.713l4.346 4.427-1.028 6.253c-.185 1.121.946 1.976 1.908 1.448L11 18.892V0Zm0 0c.469 0 .938.254 1.18.765l2.685 5.69 6.008.91c1.078.164 1.51 1.552.728 2.347l-4.346 4.427 1.028 6.253c.185 1.121-.946 1.976-1.908 1.448L11 18.892V0Z" fill="currentColor"></path></svg>
+
+                                </div>
+
+                                <div class="reviews-grid-item__bottom">
+                                    Больше чем просто качественный шиномонтаж. На днях заправил еще и кондиционер, все сделали отлично!
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="more_reviews">
+                            <a class="more_reviews__link" href="">Все отзывы</a>
+                        </div>
+                    </div>
+
+                    <div class="question-answer">
+                        <div class="question-answer__tittle">Вопрос/ответ</div>
+
+                        <div class="question-answer__list">
+                            <details class="question-answer__item">
+                                <summary class="question-answer-item__name">
+
+                                    <span class="question-answer-item-name__text">
+                                        Как записаться на шиномонтаж?
+                                    </span>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 25" fill="none"><path d="m1 6.995 11 11 11-11" stroke="#555" stroke-width="2" stroke-linejoin="round"></path></svg>
+                                </summary>
+
+                                <div class="question-answer-item__content">
+                                    <p>Вы можете записаться на шиномонтаж самостоятельно на странице
+                                        <a href="/records/service/shinomontaj/" target="_blank">
+                                            https://koleso.ru/records/service/shinomontaj/
+                                        </a>
+                                        , указав ФИО, телефон, марку авто, гос.номер.
+                                    </p>
+                                    <p> Если ваши колеса находятся у нас на хранении, выберите вариант с
+                                        ответственным хранением. Ваш комплект колес будет доставлен в выбранный вами шинный центр.
+                                    </p>
+                                    <p>Если у вас возникли проблемы, свяжитесь с нами по телефонам Контакт-центра:</p>
+                                    <p>
+                                        <a href="tel:+74955440202" target="_blank"> +7 (495) 544-02-02</a>
+                                    </p>
+                                    <p>
+                                        <a href="tel:88001006878" target="_blank">8 (800) 100-68-78</a>
+                                    </p>
+                                    <p>
+                                        Или напишите в чат
+                                        <a href="https://wa.clck.bar/79165442103?text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C!">WhatsApp </a>
+                                    </p>
+                                </div>
+                            </details>
+
+
+                            <details class="question-answer__item">
+                                <summary class="question-answer-item__name">
+
+                                    <span class="question-answer-item-name__text">
+                                        Как узнать стоимость услуг шиномонтажа или сервиса?
+                                    </span>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 25" fill="none"><path d="m1 6.995 11 11 11-11" stroke="#555" stroke-width="2" stroke-linejoin="round"></path></svg>
+                                </summary>
+
+
+                                <div class="question-answer-item__content">
+                                    <p>Воспользуйтесь
+                                        <a href="/services/shinomontaj/#Calc" target="_blank">калькулятором
+                                        </a> или обратитесь в контакт-центр:
+                                    </p>
+                                    <p> <a href="tel:+74955440202" target="_blank"> +7 (495) 544-02-02</a></p>
+                                    <p> <a href="tel:88001006878" target="_blank">8 (800) 100-68-78</a></p>
+                                    <p>Консультант в <a href="https://wa.clck.bar/79165442103?text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C!">WhatsApp </a></p>
+                                </div>
+
+
+                            </details>
+
+                            <details class="question-answer__item">
+                                <summary class="question-answer-item__name">
+
+                                    <span class="question-answer-item-name__text">
+                                        От чего зависит стоимость шиномонтажа?
+                                    </span>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 25" fill="none"><path d="m1 6.995 11 11 11-11" stroke="#555" stroke-width="2" stroke-linejoin="round"></path></svg>
+                                </summary>
+
+
+                                <div class="question-answer-item__content">
+                                    <p>Стоимость шиномонтажа зависит от типа автомобиля, размера колес, наличия
+                                        дисконтной карты, выбранного города и шинного центра</p>
+                                </div>
+                            </details>
+
+
+                            <details class="question-answer__item">
+                                <summary class="question-answer-item__name">
+
+                                    <span class="question-answer-item-name__text">
+                                        Как отменить запись на шиномонтаж или поменять дату/время?
+                                    </span>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 25" fill="none"><path d="m1 6.995 11 11 11-11" stroke="#555" stroke-width="2" stroke-linejoin="round"></path></svg>
+                                </summary>
+
+
+                                <div class="question-answer-item__content question-answer-item-content__loner">
+                                    <p>Для изменений в записи на шиномонтаж позвоните в
+                                        выбранный шинный центр. Контакты вы получите в виде SMS при записи.</p>
+                                </div>
+                            </details>
+
+
+                            <details class="question-answer__item">
+                                <summary class="question-answer-item__name">
+
+                                    <span class="question-answer-item-name__text">
+                                        У вас есть выездной шиномонтаж?
+                                    </span>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 25" fill="none"><path d="m1 6.995 11 11 11-11" stroke="#555" stroke-width="2" stroke-linejoin="round"></path></svg>
+                                </summary>
+
+
+                                <div class="question-answer-item__content question-answer-item-content__loner">
+                                    <p>Нет.</p>
+                                </div>
+                            </details>
+
+
+                            <details class="question-answer__item">
+                                <summary class="question-answer-item__name">
+
+                                    <span class="question-answer-item-name__text">
+                                        Делаете ремонт боковых порезов?
+                                    </span>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 25" fill="none"><path d="m1 6.995 11 11 11-11" stroke="#555" stroke-width="2" stroke-linejoin="round"></path></svg>
+                                </summary>
+
+
+                                <div class="question-answer-item__content">
+                                    <p>Эта услуга доступна в некоторых шинных центрах. Просьба уточнять
+                                        информацию по телефону перед приездом.</p>
+                                    <p><a href="/shops/" target="_blank"> https://koleso.ru/shops/</a></p>
+                                </div>
+                            </details>
+
+
+                            <details class="question-answer__item">
+                                <summary class="question-answer-item__name">
+
+                                    <span class="question-answer-item-name__text">
+                                        Производите ли вы ремонт и покраску дисков?
+                                    </span>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 25" fill="none"><path d="m1 6.995 11 11 11-11" stroke="#555" stroke-width="2" stroke-linejoin="round"></path></svg>
+                                </summary>
+
+
+                                <div class="question-answer-item__content question-answer-item-content__loner">
+
+                                    <p>Да. Подробнее здесь:<a href="/shops/" target="_blank"> https://koleso.ru/shops/</a></p>
+                                </div>
+                            </details>
+
+
+                            <details class="question-answer__item">
+                                <summary class="question-answer-item__name">
+
+                                    <span class="question-answer-item-name__text">
+                                        Производите ли правку дисков?
+                                    </span>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 25" fill="none"><path d="m1 6.995 11 11 11-11" stroke="#555" stroke-width="2" stroke-linejoin="round"></path></svg>
+                                </summary>
+
+
+                                <div class="question-answer-item__content question-answer-item-content__loner">
+
+                                    <p>Да. Подробнее здесь:<a href="/services/remont-i-pokraska-diskov/" target="_blank">
+                                        https://koleso.ru/services/remont-i-pokraska-diskov/</a></p>
+                                </div>
+                            </details>
+
+
+                            <details class="question-answer__item">
+                                <summary class="question-answer-item__name">
+
+                                    <span class="question-answer-item-name__text ">
+                                        Утилизируете ли вы шины?
+                                    </span>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 25" fill="none"><path d="m1 6.995 11 11 11-11" stroke="#555" stroke-width="2" stroke-linejoin="round"></path></svg>
+                                </summary>
+
+
+                                <div class="question-answer-item__content question-answer-item-content__loner">
+
+                                    <p>При покупке новых шин вы можете оставить свои старые в
+                                        <a href="/shops/" target="_blank">
+                                            шинном центре
+                                        </a></p>
+                                </div>
+                            </details>
+
+
+                            <details class="question-answer__item">
+                                <summary class="question-answer-item__name">
+
+                                    <span class="question-answer-item-name__text ">
+                                        Есть круглосуточный шиномонтаж?
+                                    </span>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 25" fill="none"><path d="m1 6.995 11 11 11-11" stroke="#555" stroke-width="2" stroke-linejoin="round"></path></svg>
+                                </summary>
+
+
+                                <div class="question-answer-item__content">
+
+                                    <p>Нет. Но в дни высокого спроса мы продлеваем режим работы. Актуальную информацию
+                                        о режиме работы центров вы сможете узнать на странице центра или по телефонам:</p>
+
+                                    <p> <a href="tel:+74955440202" target="_blank"> +7 (495) 544-02-02</a></p>
+                                    <p> <a href="tel:88001006878" target="_blank">8 (800) 100-68-78</a></p>
+                                    <p>Консультант в
+                                        <a href="https://wa.clck.bar/79165442103?text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C!">WhatsApp </a>
+                                    </p>
+
+                                </div>
+                            </details>
+
+
+                            <details class="question-answer__item">
+                                <summary class="question-answer-item__name">
+
+                                    <span class="question-answer-item-name__text ">
+                                        Вы устанавливаете датчики давления?
+                                    </span>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 25" fill="none"><path d="m1 6.995 11 11 11-11" stroke="#555" stroke-width="2" stroke-linejoin="round"></path></svg>
+                                </summary>
+
+
+                                <div class="question-answer-item__content question-answer-item-content__loner">
+
+                                    <p>Датчики давления можно установить во всех наших шинных центрах
+                                        <a href="/shops/" target="_blank">
+                                            https://koleso.ru/shops/
+                                        </a></p>
+                                </div>
+                            </details>
+
+
+                            <details class="question-answer__item">
+                                <summary class="question-answer-item__name">
+
+                                    <span class="question-answer-item-name__text ">
+                                        Производите ли вы расшиповку?
+                                    </span>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 25" fill="none"><path d="m1 6.995 11 11 11-11" stroke="#555" stroke-width="2" stroke-linejoin="round"></path></svg>
+                                </summary>
+
+
+                                <div class="question-answer-item__content question-answer-item-content__loner">
+
+                                    <p>Нет.</p>
+                                </div>
+                            </details>
+
+
+                            <details class="question-answer__item">
+                                <summary class="question-answer-item__name">
+
+                                    <span class="question-answer-item-name__text ">
+                                        Могу ли я продать вам старые шины и купить новые?
+                                    </span>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 25" fill="none"><path d="m1 6.995 11 11 11-11" stroke="#555" stroke-width="2" stroke-linejoin="round"></path></svg>
+                                </summary>
+
+
+                                <div class="question-answer-item__content">
+                                    <p>Да, можете. Мы выкупаем ваши шины и диски, если они подходят под наши условия.
+                                        Стоимость шин с пробегом засчитывается в стоимость покупки новых шин, дисков или другого товара.</p>
+                                    <p>Подробнее здесь: <a href="https://koleso.ru/services/trade-in/"
+                                                           target="_blank">https://koleso.ru/services/trade-in/</a> </p>
+                                </div>
+                            </details>
+
+                        </div>
+                    </div>
+
+                    <div class="consultation">
+                        <div class="consultation__info">
+                            <svg width="132" height="28" viewBox="0 0 133 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M.5 1.43h121.96l9.371 12.349-9.371 12.349H.5V1.43Z" stroke="#F33"></path><path d="M16.528 13.856h-.546V18H13.91V8.2h2.072v4.312l.49-.21 2.94-4.102h2.366l-3.108 4.102-.812.532.84.56L22.254 18h-2.562l-3.164-4.144Zm5.988.476c0-1.213.322-2.165.966-2.856.644-.69 1.563-1.036 2.758-1.036.625 0 1.171.098 1.638.294.466.196.854.471 1.162.826.308.345.536.756.686 1.232.158.467.238.98.238 1.54 0 .597-.084 1.139-.252 1.624a3.39 3.39 0 0 1-.728 1.218c-.318.336-.71.593-1.176.77-.458.177-.98.266-1.568.266-.635 0-1.186-.098-1.652-.294a3.18 3.18 0 0 1-1.162-.812 3.47 3.47 0 0 1-.686-1.232 5.12 5.12 0 0 1-.224-1.54Zm2.016 0c0 .308.032.597.098.868.065.27.163.509.294.714.14.196.317.355.532.476.214.121.476.182.784.182 1.138 0 1.708-.747 1.708-2.24 0-.327-.033-.625-.098-.896a1.83 1.83 0 0 0-.294-.714 1.313 1.313 0 0 0-.532-.476 1.678 1.678 0 0 0-.784-.168c-.532 0-.952.177-1.26.532-.299.355-.448.929-.448 1.722Zm11.777.826h-2.786V18h-1.96v-7.35h1.96v2.73h2.786v-2.73h1.96V18h-1.96v-2.842Zm9.52 2.394c-.317.215-.7.378-1.148.49a5.525 5.525 0 0 1-1.372.168c-.634 0-1.171-.093-1.61-.28a2.764 2.764 0 0 1-1.064-.798 3.291 3.291 0 0 1-.588-1.218 6.406 6.406 0 0 1-.182-1.582c0-1.223.299-2.175.896-2.856.607-.69 1.484-1.036 2.632-1.036.56 0 1.018.047 1.372.14.364.084.686.196.966.336l-.476 1.568a3.62 3.62 0 0 0-.728-.224 3.572 3.572 0 0 0-.826-.084c-.588 0-1.04.173-1.358.518-.308.336-.462.882-.462 1.638 0 .299.038.579.112.84.075.252.192.476.35.672.159.196.36.35.602.462.243.112.528.168.854.168.392 0 .7-.033.924-.098.234-.075.453-.173.658-.294l.448 1.47Zm3.789-2.828.308 1.176h.14l.266-1.176 1.246-4.074h2.002l-2.436 6.65c-.206.55-.401 1.045-.588 1.484a5.691 5.691 0 0 1-.588 1.12 2.345 2.345 0 0 1-.728.7c-.262.168-.574.252-.938.252-.243 0-.476-.023-.7-.07a1.879 1.879 0 0 1-.56-.182l.406-1.512c.14.047.285.07.434.07.13 0 .257-.014.378-.042a.816.816 0 0 0 .336-.168c.103-.075.196-.187.28-.336.093-.14.172-.331.238-.574l-3.36-7.392h2.366l1.498 4.074Zm8.886-2.338h-1.722a22.54 22.54 0 0 1-.182 2.212 7.92 7.92 0 0 1-.42 1.82c-.196.513-.457.92-.784 1.218-.317.299-.728.448-1.232.448-.588 0-1.003-.065-1.246-.196l.28-1.736c.159.047.303.07.434.07a.83.83 0 0 0 .588-.238c.168-.159.308-.443.42-.854.112-.42.2-.99.266-1.708.075-.719.13-1.643.168-2.772h5.39V18h-1.96v-5.614Zm5.93 3.976c.178.037.35.065.519.084.168.01.326.014.476.014 1.045 0 1.568-.336 1.568-1.008 0-.625-.504-.938-1.512-.938-.383 0-.733.042-1.05.126v1.722Zm0-3.08c.28-.047.566-.08.855-.098.29-.019.532-.028.728-.028.541 0 1.003.06 1.386.182.382.112.69.27.924.476.243.205.415.448.518.728.112.28.168.579.168.896 0 .439-.07.826-.21 1.162-.14.327-.36.602-.658.826-.299.224-.69.392-1.176.504-.476.112-1.055.168-1.736.168-.588 0-1.102-.01-1.54-.028-.439-.01-.845-.028-1.218-.056V10.65h1.96v2.632Zm11.067-.896H73.22V18h-2.044v-5.614h-2.282V10.65h6.608v1.736Zm1.054-1.232c.42-.187.933-.34 1.54-.462A9.833 9.833 0 0 1 80 10.51c.514 0 .943.06 1.288.182.355.121.635.299.84.532.206.224.35.5.434.826.093.317.14.672.14 1.064 0 .476-.018.947-.056 1.414-.037.467-.056.961-.056 1.484 0 .355.023.7.07 1.036.047.336.121.658.224.966h-1.596l-.322-1.092h-.168a3.34 3.34 0 0 1-.924.84c-.373.233-.854.35-1.442.35-.355 0-.681-.051-.98-.154a2.323 2.323 0 0 1-.756-.434 2.248 2.248 0 0 1-.49-.686 2.145 2.145 0 0 1-.168-.854c0-.83.275-1.456.826-1.876.56-.43 1.405-.644 2.534-.644.261 0 .523.023.784.07.261.037.444.065.546.084.028-.196.042-.364.042-.504 0-.355-.089-.616-.266-.784-.177-.168-.508-.252-.994-.252-.448 0-.886.056-1.316.168-.42.103-.793.233-1.12.392l-.518-1.484Zm2.562 5.39c.439 0 .789-.103 1.05-.308.261-.205.453-.42.574-.644v-.84a1.27 1.27 0 0 0-.224-.056 7.393 7.393 0 0 0-.672-.098 3.747 3.747 0 0 0-.308-.014c-.504 0-.877.093-1.12.28-.243.177-.364.401-.364.672 0 .336.094.588.28.756.196.168.457.252.784.252Zm13.358 3.122h-1.386L90.85 18h-6.118v-7.35h1.96v5.614h2.646V10.65h1.96v5.614h1.176v3.402Zm6.153-4.984.084-1.246-.882 1.232L94.932 18h-1.176v-7.35h1.96v3.458l-.07 1.008h.168c.112-.159.224-.327.336-.504.121-.177.238-.345.35-.504l2.912-3.458h1.176V18h-1.96v-3.318Zm8.244.812-1.106.182L104.24 18h-2.394l1.582-2.254.826-.336c-.364-.037-.668-.13-.91-.28a1.938 1.938 0 0 1-.588-.546 2.293 2.293 0 0 1-.322-.728 4.066 4.066 0 0 1-.084-.826c0-.887.317-1.54.952-1.96.644-.42 1.633-.63 2.968-.63.476 0 .938.023 1.386.07.448.047.84.098 1.176.154V18h-1.96v-2.506Zm0-1.232v-2.03a2.663 2.663 0 0 0-.882-.154c-.523 0-.92.093-1.19.28-.271.177-.406.462-.406.854 0 .383.149.658.448.826.308.168.765.252 1.372.252l.658-.028Z" fill="#F33">
+                            </path></svg>
+                            <h2 class="consultation-info__tittle">
+                                <span class="consultation-info-tittle__questions">Остались вопросы?</span>
+                                <span class="consultation-info-tittle__messengers">Напишите в мессенджеры!</span>
+                            </h2>
+                            <div class="consultation-info__messengers">
+                                <a class="consultation-info-messengers__messenger">
+                                    <svg width="40" height="40" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="15" cy="15" r="15" fill="#2F89CE"></circle>
+                                        <path d="m7.013 15.28 3.449 1.287 1.344 4.325c.058.292.41.35.643.175l1.929-1.578c.175-.175.467-.175.701 0l3.449 2.513c.234.176.584.059.643-.233l2.572-12.275c.058-.292-.234-.585-.527-.468L7.013 14.521c-.35.117-.35.643 0 .76Zm4.618.644 6.78-4.15c.117-.059.234.117.117.175l-5.553 5.202c-.175.175-.35.41-.35.701l-.176 1.403c0 .175-.292.234-.35 0l-.702-2.572c-.176-.292-.059-.643.234-.76Z" fill="#fff">
+                                    </path></svg>
+                                </a>
+
+                                <a class="consultation-info-messengers__messenger">
+                                    <svg width="40" height="40" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="34" height="34" rx="17" fill="#07F"></rect>
+                                        <path d="M17.835 22.95c-6.389 0-10.033-4.467-10.185-11.9h3.2c.105 5.456 2.465 7.767 4.334 8.243V11.05h3.013v4.705c1.846-.202 3.785-2.346 4.439-4.705h3.013a9.17 9.17 0 0 1-1.443 3.402 8.972 8.972 0 0 1-2.657 2.53 9.261 9.261 0 0 1 3.028 2.459 9.479 9.479 0 0 1 1.773 3.509h-3.317a5.9 5.9 0 0 0-1.789-2.87 5.717 5.717 0 0 0-3.047-1.382v4.252h-.362Z" fill="#fff">
+                                    </path></svg>
+                                </a>
+
+                                <a class="consultation-info-messengers__messenger">
+                                    <svg width="40" height="40" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 32c8.837 0 16-7.163 16-16S24.837 0 16 0 0 7.163 0 16s7.163 16 16 16Z" fill="#3ACE01"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M22.953 9.432a8.99 8.99 0 0 0-6.4-2.653c-4.988 0-9.046 4.057-9.048 9.044 0 1.595.416 3.15 1.208 4.522l-1.284 4.687 4.796-1.258c1.322.72 2.81 1.1 4.324 1.101h.003c4.987 0 9.046-4.057 9.048-9.044a8.988 8.988 0 0 0-2.647-6.4Zm-6.4 13.916h-.004a7.51 7.51 0 0 1-3.827-1.048l-.275-.163-2.846.746.76-2.774-.179-.284a7.498 7.498 0 0 1-1.15-4c.002-4.146 3.375-7.518 7.523-7.518a7.47 7.47 0 0 1 5.317 2.205 7.472 7.472 0 0 1 2.2 5.318c-.001 4.145-3.375 7.518-7.52 7.518Zm2.58-6.366c-.207-.075-.358-.113-.508.114-.151.226-.584.735-.716.886-.132.15-.264.17-.49.056-.226-.113-.955-.352-1.818-1.122-.672-.599-1.126-1.339-1.258-1.565-.132-.226-.014-.349.1-.461.101-.101.226-.264.338-.396.114-.132.151-.226.227-.377.075-.151.037-.283-.02-.396-.056-.113-.508-1.226-.696-1.678-.184-.44-.37-.381-.509-.388a9.135 9.135 0 0 0-.433-.008.83.83 0 0 0-.603.283c-.207.226-.791.773-.791 1.885s.81 2.187.923 2.338c.113.15 1.594 2.433 3.862 3.412.539.233.96.372 1.288.476a3.1 3.1 0 0 0 1.424.09c.435-.065 1.338-.547 1.526-1.075.189-.528.189-.98.132-1.074-.056-.095-.207-.151-.433-.264-.226-.113-1.338-.66-1.545-.736Z" fill="#fff">
+                                    </path></svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <img src="source/element-png/background.png" style="height: 100%; width: 498px" alt="Телефон с иконкой мессенджера">
+                    </div>
+
+                    <div class="online-registration">
+                        <a class="online-registration__href" href="https://kzn.koleso.ru/rec/?widgetOpened">
+                            <img src="source/element-img/BannerDown.jpeg">
+                        </a>
+                    </div>
+
+                    <div class="additional-services">
+                        <h2 class="additional-services__tittle">ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ</h2>
+                        <ul class="additional-services__list">
+                            <li class="additional-services-list__item">
+                                <a class="additional-services-list-item__href" href="/">
+                                    Грузовой шиномонтаж
+                                </a>
+                            </li>
+
+                            <li class="additional-services-list__item">
+                                <a class="additional-services-list-item__href" href="/">
+                                    Повторная ошиповка зимних шин
+                                </a>
+                            </li>
+
+                            <li class="additional-services-list__item">
+                                <a class="additional-services-list-item__href" href="/">
+                                    Балансировка
+                                </a>
+                            </li>
+
+                            <li class="additional-services-list__item">
+                                <a class="additional-services-list-item__href" href="/">
+                                    Установка/замена датчиков давления
+                                </a>
+                            </li>
+
+                            <li class="additional-services-list__item">
+                                <a class="additional-services-list-item__href" href="/">
+                                    Ремонт шин
+                                </a>
+                            </li>
+
+                            <li class="additional-services-list__item">
+                                <a class="additional-services-list-item__href" href="/">
+                                    Шиномонтаж PAX-колес
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="mailing">
+            <div class="mailing-grid">
+                <div class="mailing-grid__left">
+                    Подпишитесь на рассылку и получайте ежемесячные скидки и информацию об акциях!
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
