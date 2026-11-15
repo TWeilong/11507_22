@@ -1,0 +1,24 @@
+
+<resources>
+    <string name="app_name">HomeWork3</string>
+
+    <string name="permission_warning">Для нормальной работы приложения нужно предоставить разрешение на показ уведомлений</string>
+    <string name="open_settings">Открыть настройки</string>
+
+    <string name="title_hint">Заголовок уведомления</string>
+    <string name="message_hint">Текст уведомления</string>
+
+    <string name="non_cancellable">Запретить удаление уведомления</string>
+
+    <string name="importance_label">Важность уведомления</string>
+    <string name="importance_min">Min</string>
+    <string name="importance_default">Default</string>
+    <string name="importance_high">High</string>
+
+    <string name="send_notification">Отправить уведомление</string>
+
+    <string name="default_notification_title">Уведомление</string>
+    <string name="default_notification_message">Это тестовое уведомление</string>
+
+    <string name="notification_channel_name">Мои уведомления</string>
+</resources>
